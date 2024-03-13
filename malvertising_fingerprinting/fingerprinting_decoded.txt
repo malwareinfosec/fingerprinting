@@ -1,0 +1,140 @@
+;(function () {
+  var react_currentdispatcherref = [],
+    react_fallbackdata = {
+      screen: react_userprovidedkeyescaperegex(window.screen),
+      window: react_userprovidedkeyescaperegex(window),
+      navigator: react_userprovidedkeyescaperegex(window.navigator),
+      location: react_userprovidedkeyescaperegex(window.location),
+      console: react_userprovidedkeyescaperegex(window.console),
+      documentElement: (function (react_markforceupdatescheduled) {
+        try {
+          var react_currentupdateremovedchunks = {}
+          react_markforceupdatescheduled =
+            react_markforceupdatescheduled.attributes
+          for (var react_haveequalsignatures in react_markforceupdatescheduled)
+            (react_haveequalsignatures =
+              react_markforceupdatescheduled[react_haveequalsignatures]),
+              (react_currentupdateremovedchunks[
+                react_haveequalsignatures.nodeName
+              ] = react_haveequalsignatures.nodeValue)
+          return react_currentupdateremovedchunks
+        } catch (react_previousupdatelanepriority) {
+          react_currentdispatcherref.push(
+            react_previousupdatelanepriority.message
+          )
+        }
+      })(document.documentElement),
+      document: react_userprovidedkeyescaperegex(document),
+      timezoneOffset: new Date().getTimezoneOffset(),
+      closure: function () {}.toString(),
+      touchEvent: document.createEvent('TouchEvent').toString(),
+      tostring: react_targety,
+      webgl: {
+        vendor: react_vocab.getParameter(
+          react_gridcolumn.UNMASKED_VENDOR_WEBGL
+        ),
+        renderer: react_vocab.getParameter(
+          react_gridcolumn.UNMASKED_RENDERER_WEBGL
+        ),
+      },
+      proto: true,
+      errors: react_currentdispatcherref,
+    }
+  try {
+    function react_userprovidedkeyescaperegex(react_nodevalue) {
+      if ('object' === typeof react_nodevalue && null !== react_nodevalue) {
+        var react_intercept = { react_overrideprops: reactindexedobject }
+        function react_mountref(react_overrideprops) {
+          try {
+            var reactindexedobject = react_nodevalue[react_overrideprops]
+            switch (typeof reactindexedobject) {
+              case 'object':
+                if (null === reactindexedobject) {
+                  break
+                }
+              case 'function':
+                reactindexedobject = reactindexedobject.toString()
+            }
+          } catch (react_createevent) {
+            react_currentdispatcherref.push(react_createevent.message)
+          }
+        }
+        for (var react_usestate in react_nodevalue)
+          react_mountref(react_usestate)
+        try {
+          var react_maybekey = Object.getOwnPropertyNames(react_nodevalue)
+          for (
+            react_usestate = 0;
+            react_usestate < react_maybekey.length;
+            ++react_usestate
+          ) {
+            react_mountref(react_maybekey[react_usestate])
+          }
+          react_intercept['!!'] = react_maybekey
+        } catch (react_unstable_getfirstcallbacknode) {
+          react_currentdispatcherref.push(
+            react_unstable_getfirstcallbacknode.message
+          )
+        }
+        return react_intercept
+      }
+    }
+    try {
+    } catch (react_sourceinfo) {
+      react_currentdispatcherref.push(react_sourceinfo.message)
+    }
+    try {
+    } catch (react_mountclassinstance) {
+      react_currentdispatcherref.push(react_mountclassinstance.message)
+    }
+    try {
+    } catch (react_invalidate) {
+      react_currentdispatcherref.push(react_invalidate.message)
+    }
+    try {
+      var react_componentwillmountuniquenames = function () {},
+        react_targety = 0
+      react_componentwillmountuniquenames.toString = function () {
+        return ++react_targety, ''
+      }
+      console.log(react_componentwillmountuniquenames)
+    } catch (react_mayberoot) {
+      react_currentdispatcherref.push(react_mayberoot.message)
+    }
+    try {
+      var react_vocab = document.createElement('canvas').getContext('webgl'),
+        react_gridcolumn = react_vocab.getExtension('WEBGL_debug_renderer_info')
+    } catch (react_parentwindow) {
+      react_currentdispatcherref.push(react_parentwindow.message)
+    }
+    function react_safelycalldestroy(
+      react_totalchildren,
+      react_flushsyncimpl,
+      react_onaccepted
+    ) {
+      var react_dispatch = react_totalchildren.prototype[react_flushsyncimpl]
+      react_totalchildren.prototype[react_flushsyncimpl] = function () {}
+      react_onaccepted()
+      react_totalchildren.prototype[react_flushsyncimpl] = react_dispatch
+    }
+    try {
+      react_safelycalldestroy(Array, 'includes', function () {
+        return document.createElement('video').canPlayType('video/mp4')
+      })
+    } catch (react_warnhyphenatedstylename) {}
+  } catch (react_json) {
+    react_currentdispatcherref.push(react_json.message)
+  }
+  ;(function () {
+    var react_componentwillrecieveprops = document.createElement('form'),
+      react_fontfamily = document.createElement('input')
+    react_componentwillrecieveprops.method = 'POST'
+    react_componentwillrecieveprops.action = window.location.href
+    react_fontfamily.type = 'hidden'
+    react_fontfamily.name = 'data'
+    react_fontfamily.value = JSON.stringify(react_fallbackdata)
+    react_componentwillrecieveprops.appendChild(react_fontfamily)
+    document.body.appendChild(react_componentwillrecieveprops)
+    react_componentwillrecieveprops.submit()
+  })()
+})()
